@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * sign - prints the sign of a number
+ * print_sign - prints the sign of a number
  * @n: type int interger, can be negative or positive
  * Description: print +, 0, or other
  * Return: 1 if +, 0 if 0, -1 if -
