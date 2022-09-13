@@ -5,7 +5,7 @@
  * @y: int type
  * Return: result of addition
  */
-int add(int, int)
+int add(int n, int y)
 {
 	int n;
 	int y;
