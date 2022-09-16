@@ -8,16 +8,6 @@
 
 void print_square(int size)
 {
-#include "main.h"
-
-/**
-* print_square - prints a square
-* @size: size of square
-* Return: none
-**/
-
-void print_square(int size)
-{
 	int l, c;
 
 	if (size <= 0)
