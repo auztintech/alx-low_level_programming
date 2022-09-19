@@ -4,7 +4,7 @@
  * @s: character
  * Return: i
  */
-int_strlen(char *s)
+int _strlen(char *s)
 {
 	int n;
 
