@@ -1,8 +1,5 @@
-#ifndef _LISTS_
-#define _LISTS_
-
-#include <stdio.h>
-#include <stdlib.h>
+#ifndef LISTS_H
+#define LISTS_H
 
 /**
  * struct listint_s - singly linked list
@@ -18,18 +15,26 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
+size_t print_listint(const listint_t *h);
+size_t listint_len(const listint_t *h);
+listint_t *add_nodeint(listint_t **head, const int n);
+listint_t *add_nodeint_end(listint_t **head, const int n);
+#ifndef LISTS_H
+#define LISTS_H
+
 /**
- * struct listp_s - singly linked list
- * @p: pointers of nodes
+ * struct listint_s - singly linked list
+ * @n: integer
  * @next: points to the next node
  *
- * Description: singly linked list of pointers
+ * Description: singly linked list node structure
+ * for Holberton project
  */
-typedef struct listp_s
+typedef struct listint_s
 {
-	void *p;
-	struct listp_s *next;
-} listp_t;
+	int n;
+	struct listint_s *next;
+} listint_t;
 
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
@@ -46,5 +51,4 @@ listint_t *reverse_listint(listint_t **head);
 size_t print_listint_safe(const listint_t *head);
 size_t free_listint_safe(listint_t **h);
 listint_t *find_listint_loop(listint_t *head);
-
 #endif
